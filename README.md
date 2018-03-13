@@ -26,3 +26,10 @@ Things you may want to cover:
 default admin details
 email : admin@example.com
 password: test123
+
+
+To change 
+categories go to products > taxonomies > categories
+brand go to products > taxonomies > brand
+
+from there, you can CRUD them up
