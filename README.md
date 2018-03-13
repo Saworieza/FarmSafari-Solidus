@@ -1,27 +1,29 @@
 # README
+...
+Installation
+clone this repo
+run bundle install
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+then run rails db:create db:migrate
+This creates and migrates your database tables assuming you already have postgres installed. if not
+Install PostgreSQL with the following command:
 
-* Ruby version
+sudo apt-get install postgresql postgresql-contrib
 
-* System dependencies
+then create a user, for the purpose of this code base the user will have same name as our store:
 
-* Configuration
+sudo -u postgres createuser sprubyshop -s
+sudo -u postgres psql
 
-* Database creation
+At the postgresql prompt, enter:
 
-* Database initialization
+\password sprubyshop
 
-* How to run the test suite
+Then enter your password (You’ll be required to enter it twice.)
 
-* Services (job queues, cache servers, search engines, etc.)
+You can now exit using CTRL + D.
 
-* Deployment instructions
-
-* ...
 
 default admin details
 email : admin@example.com
